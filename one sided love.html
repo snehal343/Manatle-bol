@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>कदाचित हे प्रेम असेल… 💗 | मनातले बोल</title>
+
+  <meta name="description"
+    content="काही feelings ना नाव नसतं... त्या फक्त मनाला जाणवतात. ❤️">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Marathi&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --pink: #b65f79;
+      --dark-pink: #8f405c;
+      --cream: #fffaf6;
+      --soft-pink: #fcebf0;
+      --text: #45343a;
+      --muted: #8b747c;
+      --border: #f0dce3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at top left, #fce6ed, transparent 48%),
+        var(--cream);
+      font-family: "Tiro Devanagari Marathi", serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255, 250, 246, 0.85);
+    }
+
+    .brand {
+      font-size: 25px;
+      color: var(--dark-pink);
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 75px 20px 60px;
+      text-align: center;
+    }
+
+    .hero-icon {
+      font-size: 43px;
+      margin-bottom: 12px;
+      animation: heartbeat 2s ease-in-out infinite;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 5px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      color: var(--dark-pink);
+      background: rgba(255, 255, 255, 0.65);
+      font-size: 13px;
+    }
+
+    h1 {
+      margin: 22px auto 15px;
+      max-width: 760px;
+      color: var(--dark-pink);
+      font-size: clamp(34px, 6vw, 57px);
+      line-height: 1.55;
+      font-weight: normal;
+    }
+
+    .hero-description {
+      max-width: 570px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 2;
+    }
+
+    .little-hearts {
+      margin-top: 23px;
+      font-family: "DM Sans", sans-serif;
+      font-size: 19px;
+      letter-spacing: 8px;
+    }
+
+    .reading-info {
+      margin-top: 20px;
+      color: var(--muted);
+      font-family: "DM Sans", sans-serif;
+      font-size: 12px;
+    }
+
+    .story-card {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto 70px;
+      padding: clamp(24px, 5vw, 55px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 15px 50px rgba(143, 64, 92, 0.07);
+    }
+
+    .story-start {
+      margin-bottom: 35px;
+      text-align: center;
+      color: var(--pink);
+      font-size: 27px;
+    }
+
+    .story p {
+      margin: 0 0 27px;
+      font-size: 19px;
+      line-height: 2.15;
+      overflow-wrap: anywhere;
+    }
+
+    .highlight {
+      padding: 20px 22px;
+      margin: 32px 0;
+      border-left: 4px solid #d995ab;
+      border-radius: 0 12px 12px 0;
+      background: var(--soft-pink);
+      color: var(--dark-pink);
+      font-size: 19px;
+      line-height: 2;
+    }
+
+    .heart-divider {
+      margin: 32px 0;
+      text-align: center;
+      color: #d58ba1;
+      font-size: 23px;
+      letter-spacing: 9px;
+    }
+
+    .ending {
+      margin-top: 42px;
+      padding: 30px 15px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #fff0f4, #fff8f1);
+      text-align: center;
+    }
+
+    .ending .english {
+      margin: 0 0 14px;
+      color: var(--dark-pink);
+      font-family: "DM Sans", sans-serif;
+      font-size: clamp(19px, 4vw, 24px);
+      line-height: 1.8;
+      font-weight: 600;
+    }
+
+    .ending .final-line {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .signature {
+      margin-top: 30px;
+      text-align: center;
+      color: var(--pink);
+      font-size: 17px;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: white;
+      color: var(--dark-pink);
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .back-home:hover {
+      background: var(--soft-pink);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      padding: 28px 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer .footer-heart {
+      color: var(--pink);
+      font-size: 20px;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.12);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 50px 18px 38px;
+      }
+
+      .brand {
+        font-size: 22px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .story-card {
+        border-radius: 14px;
+        margin-bottom: 40px;
+      }
+
+      .story p {
+        font-size: 17px;
+        line-height: 2.1;
+        margin-bottom: 23px;
+      }
+
+      .highlight {
+        padding: 16px;
+        font-size: 17px;
+      }
+
+      .story-start {
+        font-size: 23px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">🌷 मनातले बोल</a>
+    <p class="brand-subtitle">शब्द मनातले... भावना आपल्या. 💗</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-icon">💗</div>
+
+    <span class="eyebrow">♡ एक अनामिक भावना ♡</span>
+
+    <h1>कदाचित हे प्रेम असेल… 🥹❤️</h1>
+
+    <p class="hero-description">
+      काही feelings ना नाव नसतं…
+      काही नाती अजून सुरूही झालेली नसतात,
+      तरी मन त्यांच्याशी जोडलेलं असतं. 🌷
+    </p>
+
+    <div class="little-hearts">♡ ✨ ♡ ✨ ♡</div>
+
+    <div class="reading-info">
+      💌 एक मनापासून लिहिलेली गोष्ट
+    </div>
+  </section>
+
+  <main class="story-card">
+    <div class="story-start">🦋 मनातलं थोडंसं…</div>
+
+    <article class="story">
+
+      <p>
+        कदाचित काही feelings अशाच असतात…
+        त्यांना explain करता येत नाही.
+        फक्त feel करता येतात. ❤️
+      </p>
+
+      <p>
+        आणि कधी कधी स्वतःलाच प्रश्न पडतो—
+        <strong>“असं नेमकं त्याच्यासोबतच का?”</strong> 🥹
+      </p>
+
+      <div class="heart-divider">♡ ✧ ♡</div>
+
+      <p>
+        मला त्याच्याकडून काही अपेक्षा आहेत की नाही,
+        हेही कदाचित मला माहीत नाही…
+        पण त्याच्याशी बोलावंसं वाटतं,
+        त्याची आठवण यावी असं नसतानाही आठवण येते,
+        आणि त्याच्याशी बोलल्यानंतर मनाला
+        एक वेगळीच शांतता मिळते… हे मात्र खरं आहे. ❤️‍🩹
+      </p>
+
+      <p>
+        कदाचित तो माझ्यासाठी नक्की काय आहे,
+        हे आज मला सांगता येणार नाही.
+        पण एवढं नक्की—तो माझ्या दिवसातला
+        असा एक छोटासा भाग बनलाय,
+        ज्याच्याशिवाय दिवस somehow incomplete वाटतो. 🌙
+      </p>
+
+      <div class="highlight">
+        काही लोक आयुष्यात येतात आणि काहीतरी बदलून जातात… 🌷
+
+        आणि काही लोक येतात, आणि आपल्याला स्वतःच्या
+        मनातल्या अशा feelings ची ओळख करून देतात,
+        ज्या आपल्यालाच माहीत नसतात. 💗
+      </div>
+
+      <p>
+        तो माझ्यासाठी नेमका काय आहे,
+        हे कदाचित वेळच सांगेल…
+        पण आजच्या या क्षणी, माझ्या मनात त्याच्यासाठी
+        जे काही आहे ना—
+      </p>
+
+      <p>
+        ते खूप सुंदर आहे… खूप genuine आहे…
+        आणि कदाचित म्हणूनच मला त्याचं नाव
+        द्यावंसंही वाटत नाही. 🫶🏻
+      </p>
+
+      <div class="heart-divider">💗 ✨ 💗</div>
+
+      <p>
+        फक्त एवढंच वाटतं…
+        हे feeling असंच थोडं माझ्यासोबत राहावं.
+        कारण त्याचा विचार आला की नकळत चेहऱ्यावर
+        smile येते… आणि त्याच्याशी बोलताना
+        वेळ थांबावा असंच वाटतं. 🥹❤️
+      </p>
+
+      <section class="ending">
+        <div class="little-hearts">🦋 ♡ 🦋</div>
+
+        <p class="english">
+          Maybe someday I'll understand why it's him… 💌
+        </p>
+
+        <p class="final-line">
+          But for now, I just want to feel it. ✨❤️
+        </p>
+      </section>
+
+    </article>
+
+    <div class="signature">
+      प्रेमाने, <br>
+      <strong>मनातले बोल</strong> 🌷
+    </div>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="back-home">
+        ← मुख्यपृष्ठावर परत जा 🏡
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-heart">♡</div>
+    काही भावना शब्दांत मावत नाहीत… <br>
+    त्या फक्त मनात जपायच्या असतात. 💗
+    <p>© 2026 मनातले बोल | Made with love ✨</p>
+  </footer>
+
+</body>
+</html>
